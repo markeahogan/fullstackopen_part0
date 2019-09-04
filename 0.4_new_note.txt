@@ -1,14 +1,15 @@
 note over browser:
-js-code creates a new Object
-containing the note and date
-and makes a POST request to
-/new_note
+browser creates a POST request
+containing the body of the form
+directed to /new_note
 end note
 
 browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
 
 note over server:
-server adds the note to notes array
+server extracts the note text,
+creates a new object containing the note and date
+adds the note to notes array
 end note
 
 server-->browser: 302 Found
