@@ -1,0 +1,28 @@
+note over browser:
+js-code prevents default
+form action
+end note
+
+note over browser:
+js-code creates a new Object
+containing the note and date
+end note
+
+note over browser:
+js-code adds the note object
+to its local array
+end note
+
+note over browser:
+js-code clears the input and
+executes the event handler
+that renders notes to display
+end note
+
+note over browser:
+js-code makes a POST request
+containing the note
+to /new_note_spa
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
